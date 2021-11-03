@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Modes</title>
+    <style>
+        div {
+            padding: 0.5em;
+            display: inline-block;
+            inline-size: 550px;
+            font-size: xx-large;
+            border-inline-end: 1em solid purple;
+            border-block-start: 0.1 dotted rgb(76, 76, 255);
+            margin: 1em;
+            background-color: rgb(255, 177, 148);
+        }
+        
+        .vertical {
+            writing-mode: vertical-rl;
+        }
+        
+        h1 {
+            border-block-end: 0.5em solid black;
+            text-decoration: wavy overline turquoise
+        }
+
+    </style>
+</head>
+<body>
+    <div class="vertical">
+        <h1>Hello Hugo</h1>
+        <p>Nice to meet you!</p>
+    </div>
+    <div class="horizontal">
+        <h1>Escrita horizontal normal</h1>
+        <p>Enquanto este texto tem o writing-mode padrão.</p>
+    </div>
+</body>
+</html>

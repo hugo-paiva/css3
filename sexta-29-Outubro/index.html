@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom , #5d7694, #b7cbe4, #5d7694);
+            font-family: Helvetica, Arial, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #324965;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 2px 2px 15px #b7cbe4;
+        }
+
+        main {
+            display: flex;
+            flex-basis: 30%;
+            justify-content: space-around;
+            align-items: center;
+            height: 30vw;
+        }
+
+        main>div {
+            font-size: 9vw;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:focus,
+        a:hover,
+        a:active {
+            text-decoration: none;
+            color:white
+        }
+
+        img {
+            height: 70%;
+            border-radius: 50%;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        div#coluna {
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+
+        div#coluna>div {
+            background-color: #324965;
+            width: 42%;
+            margin-inline: 3em;
+            margin-bottom: 0.5em;
+            padding: 1em;
+            border-radius: 0.5em;
+            flex: 1 1 auto;
+        }
+        
+        div#coluna>div:hover {
+            box-shadow: 3px 3px 10px black;
+            padding: 1.3em;
+        }
+
+        div#contato {
+            display: flex;
+            justify-content: center;
+        }
+
+        div#contato img {
+            height: 40px;
+            margin-inline: 0.5em;
+        }
+
+        div#tecno {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        footer {
+            box-shadow: 2px 2px 15px rgb(69, 91, 114);
+            padding: 0.5vw;
+        }
+
+        footer>p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#sobre">
+            <p>Sobre</p>
+        </a>
+        <a href="#formacao">
+            <p>Formação</p>
+        </a>
+        <a href="#profissional">
+            <p>Profissional</p>
+        </a>
+        <a href="#experiencia">
+            <p>Competências</p>
+        </a>
+        </a>
+        <a href="#contato">
+            <p>Contato</p>
+        </a>
+    </header>
+    <main>
+        <div>HUGO</div>
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFbYcB3L8owFw/profile-displayphoto-shrink_800_800/0/1551273594386?e=1641427200&v=beta&t=UbrssdU0P_JBic7Af7_RgXIp1MjHBut8KIXdIzxFIqc"
+            alt="Foto Hugo">
+        <div>PAIVA</div>
+    </main>
+    <div id="coluna">
+        
+        <div style="align-self: flex-start;" id="sobre">
+            <h1>Sobre</h1>
+            <p style="text-align: justify; line-height: 1.6em;">Oi! Meu nome é Hugo Sousa Paiva. Atualmente sou estudante da Alpha Edtech a caminho de ser um desenvolvedor web full-stack. Eu gosto muito de ficção cientifica, livros e tenho um pequeno fascínio pelo mundo do cinema e da animação. Meu objetivo profissional é trabalhar como desenvolvedor full-stack num ambiente em que eu possa propor soluções criativas e resolver problemas de pessoas que conheço atráves destas aplicações.</p>
+        </div>
+        
+        <div style="align-self: flex-end;" id="formacao">
+            <h1>Formação</h1>
+            <p style="text-align: justify; line-height: 1.6em;">
+            <p>Ensino Médio - Centro Educacional Católica de Brasília</p>
+            <p>2011-2013</p>
+            Inglês - Cooperativa de Idiomas do Brasil
+            <p>2013-2017</p>
+            Geologia - Universidade de Brasília
+            </p>
+            <p>2014 - 2020</p>
+            <p>Curso de formação acelerada Alpha Edtech</p>
+            <p>2021 - Atualmente</p>
+        </div>
+
+        <div style="align-self: flex-start;" id="profissional">
+            <h1>Profissional</h1>
+            <p>Estagiário - Agência Nacional de Mineração</p>
+            <p>ago. de 2017 - fev. de 2018</p>
+            <p>Reunir dados de produção do Cobre no Brasil ( Anuário Mineral Brasileiro, Relatório Anual de Lavra) e
+                confecção de mapas da série histórica 2011-2016.</p>
+        </div>
+        <div style="align-self: flex-end;" id="experiencia">
+            <h1>Competências e recomendações</h1>
+            <p>Inglês - compreende bem, lê bem, fala bem.</p>
+            <p>Manuseio de sistemas de informações geográficas ArcGis/ QGIS</p>
+            <h1>Ferramentas e Tecnologias</h1>
+            <div id="tecno">
+                <div>
+                    <p>HTML 5</p>
+                </div>
+                <div>
+                    <P>CSS 3</P>
+                </div>
+                <div>
+                    <p>Photopea</p>
+                </div>
+                <div>
+                    <p>Figma</p>
+                </div>
+                <div>
+                    <p>Illustrator</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+
+        <h1 style="text-align: center;">Contato</h1>
+
+        <p>Telefone: (61) 98183-0677</p>
+        <p>Email: 
+            <a href="mailto:hugosousa76@gmail.com">hugosousa76@gmail.com</a>
+        </p>
+
+        <p>Brasileiro, Solteiro, 25 anos</p>
+        <p>Endereço: CAUB 1, Bairro Riacho Fundo 2. Brasília, Distrito Federal</p>
+        <p>Formação</p>
+        <p>Geologia - Universidade de Brasília</p>
+        <p>Aluno da segunda turma da Alpha Edtech - Instituto Alpha Lumen</p>
+
+        <!-- Contato redes sociais -->
+        <div id="contato">
+            <a href="https://www.linkedin.com/in/hugo-paiva-598835149/" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin" srcset=""></a>
+            <a href="https://www.facebook.com/hugo.sousa.paiva/" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="facebook"></a>
+            <a href="https://github.com/hugo-paiva" target="_blank"><img
+                    src="https://www.pinpng.com/pngs/m/19-198450_github-icon-png-github-icon-transparent-png.png"
+                    alt="github"></a>
+            <a href="https://www.instagram.com/h.ugopaiva/" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="instagram"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

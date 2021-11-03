@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        body {
+            font-size: large;
+            background-color: lightblue;
+        }
+
+        main, article {
+            background-color: white;
+            width: 60%;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        article *:first-child {
+            background-color: bisque;
+            color: red;
+        }
+
+        h1:hover {
+            color: purple;
+            background-color: darkgray;
+        }
+
+        article p::first-line {
+            color: darkorange;
+        }
+
+        ul[class^="first"] > li {
+            background-color: lightseagreen;
+        }
+
+        p + img {
+            width: 100%;
+            padding-bottom: 15px;
+        }
+
+        .eva {
+            background-color: crimson;
+        }
+
+        #special {
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bem vindo! (passe o mouse)</h1>
+        <p>Vamos codar hoje!</p>
+        <h2>É hora de aventuras (aqui não tem hover)</h2>
+        <img src="aventura.jpg" alt="pulando da ponte remix">
+        <p>Essa foi uma curtísssima seção main.</p>
+    </main>
+    <article>
+        <h1>Aqui temos um artigo (passe o mouse)</h1>
+        <p>O parágrafo do artigo vem aí. Segura esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, exercitationem? Esse minima, consequuntur, dignissimos neque accusamus vero asperiores eius rem autem recusandae officiis provident quaerat culpa velit dolore tenetur eum.</p>
+        <ul class="first">
+            <li>Naruto</li>
+            <li>Shingeki no Kyojin</li>
+            <li>Neon Genesis Evangelion</li>
+            <ul>
+                <li class="eva">End of Evangelion</li>
+                <li class="eva">Evangelion 1.11</li>
+                <li class="eva">Evangelion 2.22</li>
+                <li class="eva">Evangelion 3.33</li>
+                <li class="eva">Evangelion: The Final</li>
+            </ul>
+            <li>Re:Zero</li>
+        </ul>
+        <p>Parágrafo para demonstrar tags em sequência</p>
+        <img src="random-banana.jpg" alt="Uma banana em fundo rosa">
+        <p id="special">Esse parágrafo é unico merece até um ID</p>
+    </article>
+</body>
+</html>

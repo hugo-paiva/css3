@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input colors</title>
+    <style>
+        div[class] {
+            height: 2em;
+            padding-top: 1.5%;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            /* font-weight: 500; */
+        }
+
+        .hexadecimal {
+            background-color: #F0E1DD;
+        }
+
+        .hexadecTransparency {
+            background-color: #84757780;
+        }
+
+        .rgb {
+            background-color: rgb(87, 184, 255);
+        }
+
+        .rgba {
+            background-color: rgba(41, 231, 205, 0.3);
+        }
+
+        .hsl {
+            background-color: hsl(268, 76%, 48%);
+        }
+
+        .hsla {
+            background-color: hsla(268, 76%, 48%, 0.3)
+        }
+
+        .preset {
+            background-color: gray;
+        }
+
+        .current {
+            color: #C3ACCE;
+            text-shadow: 1px 1px 2px black;
+            background-color: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="hexadecimal">hexadecimal</div>
+    <div class="hexadecTransparency">hexadecimal com transparência</div>
+    <div class="rgb">rgb</div>
+    <div class="rgba">rgba</div>
+    <div class="hsl">hsl</div>
+    <div class="hsla">hsla</div>
+    <div class="preset">cor predefinida pelo browser (gray)</div>
+    <div class="current">cor atual do elemento (#C3ACCE)</div>
+
+
+    <!-- Crie uma página web que demonstre o uso de cores nos diversos formatos de descrição (“hexadecimal”, “hexadecimal com transparência”, “RGB”, “RGBA”, “HSL”, “HSLA”, “Cor predefinida pelos browsers” e “cor atual do elemento”) -->
+</body>
+</html>

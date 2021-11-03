@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div[class] {
+            font-family: Helvetica, Arial, sans-serif;
+            display: flex;
+            border-radius: 1em;
+            padding: 0.5em;
+            margin: 1em;
+        }
+
+        .center {
+            background-color: rgb(107, 47, 47);
+            flex-direction: row;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .centerImg {
+            background-color: rgba(103, 103, 224, 0.3);
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
+
+        .vertical {
+            background-color: rgb(168, 77, 77);
+            width: 200px;
+            flex-direction: column;
+            height: 95vh;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .horizontal {
+            background-color: rgb(114, 156, 72);
+            height: 20vh;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .horizontal>* {
+            background-color: burlywood;
+            border-radius: 0.5em;
+            flex-basis: 50px;
+        }
+        .horizontal>*:hover {
+            align-self: stretch;
+        }
+
+        .outter {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        p {
+            color: white;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="centerImg">
+        
+        <img src="https://i.pinimg.com/736x/c2/c6/1f/c2c61fc4de690ca66c97ac7280340ac9---a-space-odyssey-poster-space-poster.jpg"
+        alt="monolito de 2001" width="150px">
+        
+    </div>
+    
+    <div class="center">
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rebel_Alliance_logo.svg/300px-Rebel_Alliance_logo.svg.png" alt="rebel alliance symbol" width="150px"></div>
+    </div>
+
+    <div class="outter">
+
+        <div class="vertical">
+            <div><p>Poeminho do Contra</br>
+            <br>    
+            Todos esses que aí estão </br>
+            Atravancando meu caminho,</br>
+            Eles passarão...</br>
+            Eu passarinho!</br>
+            <br>
+            Mario Quintana ,</p></div>
+
+            <div><img src="https://cdn.pensador.com/img/authors/ma/ri/mario-quintana-2-l.jpg" alt="Mario Quintana" width="200px"></div>
+        </div>
+        
+    </div>    
+
+    <div class="horizontal">
+        <div><p>PASSE</p></div>
+        <div><p>O</p></div>
+        <div><p>MOUSE</p></div>
+        <div><p>AQUI</p></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4198947, 2021-10-26T17:26:08-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BellfortRoughDemo by GRIN3 (Nowak)
+ * URL: https://www.myfonts.com/fonts/nowak/bellfort/rough-demo/
+ * Copyright: Bellfort Rough Demo © nowak.tv 2015. All Rights Reserved
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "BellfortRoughDemo";
+  src: url('webFonts/BellfortRoughDemo/font.woff2') format('woff2'), url('webFonts/BellfortRoughDemo/font.woff') format('woff');
+}
+

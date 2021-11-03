@@ -1,0 +1,31 @@
+html {
+    font-size: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url(https://wallpaperaccess.com/full/640767.png);
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(255,255, 255, 0.8);
+    border-radius: 1em;
+    padding: 1em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+
+ul li {
+    list-style-type: square;
+    font-size: 2em;
+    text-transform: capitalize;
+    line-height: 1.5em;
+}

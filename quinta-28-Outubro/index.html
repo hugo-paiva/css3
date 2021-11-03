@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+
+        body {
+            background-image: url(https://btkoutlet.com.br/wp-content/uploads/2020/03/4e8f38657f798895210e0bd615b394f7.jpg);
+            background-size: cover;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        main>* {
+            background-color: white;
+            padding: 0.5em;
+            border-radius: 0.2em;
+            margin: 0.5em;
+
+        }
+
+        .box {
+            display: flex;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+        }
+
+        div>* {
+            margin: 4px;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        div.payment {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            font-size: 1.6em;
+            font-family: Helvetica, Arial, sans-serif;
+            flex: auto;
+            height: 50px;
+            justify-content: space-evenly;
+
+        }
+
+        div.payment>div {
+            background-color: rgb(175, 146, 72);
+            padding: 0.5em;
+            border-radius: 0.2em;
+            flex: 1 1 160px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>LOJA DE DISCOS PAIVA</h1>
+        <div class="outside">
+        <div class="box">
+            <div><img
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/in-through-the-out-door-1555362294.jpg?crop=1xw:1xh;center,top&resize=640:*"
+                    alt="In Through the Out Door"></div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/presence-led-zeppelin-1555363010.jpg?crop=0.9971617786187322xw:1xh;center,top&resize=640:*"
+                    alt="Presence">
+            </div>
+            <div><img
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/led-zeppelin-iii-1555363141.jpg?crop=0.9775xw:1xh;center,top&resize=640:*"
+                    alt="Led Zeppelin III"></div>
+            <div><img
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/houses-of-the-holy-1555363199.jpg?crop=0.9918831168831169xw:1xh;center,top&resize=640:*"
+                    alt="Houses of the Holy"></div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/physical-graffiti-1555363262.jpg?crop=1xw:1xh;center,top&resize=640:*" alt="Physical Graffiti">
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/led-zeppelin-1-1555363346.jpg?crop=1xw:1xh;center,top&resize=640:*" alt="Led Zeppelin I">
+            </div>
+            <div><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/led-zeppelin-ii-1555363460.jpg?crop=1xw:1xh;center,top&resize=640:*" alt="Led Zeppelin II"></div>
+            <div><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/led-zeppelin-iv-1555363513.jpg?crop=1xw:1xh;center,top&resize=640:*" alt="no name"></div>
+            <div><img src="https://lh3.googleusercontent.com/-FGILtwdtfVI/TXFDexd2wyI/AAAAAAAABOI/Hx9bALbsdoU/s1600/Pink_Floyd_-_The_Division_Bell.jpg" alt=""></div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/en/7/74/Pink_Floyd-Animals-Frontal.jpg" alt=""></div>
+            <div><img src="https://i.stack.imgur.com/32XyI.jpg" alt=""></div>
+        </div>
+        </div>
+        <div class="payment">
+            <div><a href="#">Comprar</a></div>
+            <div><a href="#">Alugar</a></div>
+            <div><a href="#">Trocar</a></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
