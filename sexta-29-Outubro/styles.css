@@ -42,7 +42,7 @@ a:hover {
     color: rgb(209, 171, 73);
 }
 
-img {
+main img, footer img {
     height: 70%;
     border-radius: 50%;
     box-shadow: 2px 2px 20px black;
@@ -83,6 +83,11 @@ div#tecno {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
+}
+
+#tecno img {
+    width: 5rem;
 }
 
 footer {
