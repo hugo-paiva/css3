@@ -12,6 +12,8 @@
             font-family: Helvetica, Arial, sans-serif;
             color: white;
             text-shadow: 1px 1px 3px black;
+            margin: 0;
+            line-height: 1.6em;
         }
 
         header {
@@ -19,18 +21,17 @@
             justify-content: space-evenly;
             background-color: #324965;
             position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             box-shadow: 2px 2px 15px #b7cbe4;
         }
-
+        
         main {
             display: flex;
             flex-basis: 30%;
             justify-content: space-around;
             align-items: center;
             height: 30vw;
+            padding-top: 1.5em;
         }
 
         main>div {
@@ -41,10 +42,12 @@
         a:link,
         a:visited,
         a:focus,
-        a:hover,
         a:active {
             text-decoration: none;
             color:white
+        }
+        a:hover {
+            color: rgb(209, 171, 73);
         }
 
         img {
@@ -112,9 +115,8 @@
         <a href="#profissional">
             <p>Profissional</p>
         </a>
-        <a href="#experiencia">
+        <a href="#competencias">
             <p>Competências</p>
-        </a>
         </a>
         <a href="#contato">
             <p>Contato</p>
@@ -130,12 +132,13 @@
         
         <div style="align-self: flex-start;" id="sobre">
             <h1>Sobre</h1>
-            <p style="text-align: justify; line-height: 1.6em;">Oi! Meu nome é Hugo Sousa Paiva. Atualmente sou estudante da Alpha Edtech a caminho de ser um desenvolvedor web full-stack. Eu gosto muito de ficção cientifica, livros e tenho um pequeno fascínio pelo mundo do cinema e da animação. Meu objetivo profissional é trabalhar como desenvolvedor full-stack num ambiente em que eu possa propor soluções criativas e resolver problemas de pessoas que conheço atráves destas aplicações.</p>
+            <p style="text-align: justify;">
+                Oi! Meu nome é Hugo Sousa Paiva. Atualmente sou estudante da Alpha Edtech a caminho de ser um desenvolvedor web full-stack. Eu gosto muito de ficção cientifica, livros e tenho um pequeno fascínio pelo mundo do cinema e da animação. Meu objetivo profissional é trabalhar como desenvolvedor full-stack num ambiente em que eu possa propor soluções criativas e resolver problemas de pessoas que conheço atráves destas aplicações.
+            </p>
         </div>
         
         <div style="align-self: flex-end;" id="formacao">
             <h1>Formação</h1>
-            <p style="text-align: justify; line-height: 1.6em;">
             <p>Ensino Médio - Centro Educacional Católica de Brasília</p>
             <p>2011-2013</p>
             Inglês - Cooperativa de Idiomas do Brasil
@@ -154,7 +157,8 @@
             <p>Reunir dados de produção do Cobre no Brasil ( Anuário Mineral Brasileiro, Relatório Anual de Lavra) e
                 confecção de mapas da série histórica 2011-2016.</p>
         </div>
-        <div style="align-self: flex-end;" id="experiencia">
+        
+        <div style="align-self: flex-end;" id="competencias">
             <h1>Competências e recomendações</h1>
             <p>Inglês - compreende bem, lê bem, fala bem.</p>
             <p>Manuseio de sistemas de informações geográficas ArcGis/ QGIS</p>
