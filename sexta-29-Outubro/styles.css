@@ -4,7 +4,7 @@ body {
     color: white;
     text-shadow: 1px 1px 3px black;
     margin: 0;
-    line-height: 1.6em;
+    line-height: 1.6rem;
 }
 
 header {
@@ -22,7 +22,7 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 30vw;
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 
 main>div {
@@ -32,6 +32,7 @@ main>div {
 h1 {
     text-align: center;
     text-transform: uppercase;
+    line-height: 1.6em;
 }
 
 a,
@@ -94,7 +95,7 @@ div#tecno {
 }
 
 #tecno img {
-    width: 5rem;
+    width: 5vw;
 }
 
 footer {
