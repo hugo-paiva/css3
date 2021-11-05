@@ -68,8 +68,8 @@ div#coluna>div {
 }
 
 div#coluna>div:hover {
-    box-shadow: 3px 3px 10px black;
-    padding: 1.3em;
+    box-shadow: 5px 5px 12px black;
+    outline: #324965 solid 5px;
 }
 
 p.date {
