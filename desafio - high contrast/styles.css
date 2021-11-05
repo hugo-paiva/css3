@@ -1,0 +1,131 @@
+html {
+    font-size: 1.2vw;
+}
+
+body {
+    background-image: linear-gradient(to bottom , #5d7694, #ffffff, #ffffff, #5d7694);
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #324965;
+    position: fixed;
+    width: 100%;
+    box-shadow: 2px 2px 15px #b7cbe4;
+}
+
+main {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vw;
+    padding-top: 1.5rem;
+    color: #1B365C;
+}
+
+main>div {
+    font-size: 9vw;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    color: #996F20;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color:white
+}
+
+a:hover {
+    color: rgb(209, 171, 73);
+}
+
+main img, footer img {
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px black;
+}
+
+div#coluna {
+    display: flex;
+    flex-flow: column wrap;
+    margin-inline: 5%;
+
+}
+
+div#coluna>div {
+    background-color: white;
+    width: 42%;
+    border: 1px #324965;
+    margin-inline: 2.5em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 5px black;
+}
+
+div#coluna>div:hover {
+    box-shadow: 5px 5px 12px black;
+    outline: #324965 solid 5px;
+}
+
+p.date {
+    font-weight: bolder;
+}
+
+div#contato {
+    display: flex;
+    justify-content: center;
+}
+
+div#contato img {
+    height: 40px;
+    margin-inline: 0.5em;
+}
+
+div#tecno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#tecno img {
+    width: 5vw;
+}
+
+footer {
+    box-shadow: 2px 2px 15px rgb(69, 91, 114);
+    padding: 0.5vw;
+}
+
+footer>p {
+    text-align: center;
+}
+
+footer img {
+    box-shadow: 1px 2px 5px black;
+}
+
+div#spine {
+    position: absolute;
+    margin-top: 7%;
+    width: 1%;
+    height: 70vw;
+    background-color: #996F20;
+    left: 49.5%;
+    z-index: -1;
+}
