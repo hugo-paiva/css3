@@ -66,7 +66,7 @@ div#coluna {
 div#coluna>div {
     background-color: #324965;
     width: 42%;
-    margin-inline: 3em;
+    margin-inline: 2.5em;
     margin-bottom: 0.5em;
     padding: 1em;
     border-radius: 0.5em;
@@ -109,4 +109,18 @@ footer {
 
 footer>p {
     text-align: center;
+}
+
+footer img {
+    box-shadow: 1px 2px 5px black;
+}
+
+div#spine {
+    position: absolute;
+    margin-top: 7%;
+    width: 1%;
+    height: 70vw;
+    background-color: rgb(20, 20, 20);
+    left: 49.5%;
+    z-index: -1;
 }
