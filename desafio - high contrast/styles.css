@@ -1,4 +1,10 @@
-html {
+@media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+}html {
     font-size: 1.2vw;
 }
 
