@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gidole;
+    src: url(fonts/GidoleFont/Gidole-Regular.ttf) format("truetype");
+}
+
 html {
     font-size: 1.2vw;
     scroll-behavior: smooth;
@@ -6,6 +11,7 @@ html {
 body {
     background-image: linear-gradient(to bottom , #5d7694, #ffffff, #ffffff, #5d7694);
     font-family: Helvetica, Arial, sans-serif;
+    font-family: Gidole;
     color: black;
     margin: 0;
     line-height: 1.6rem;
@@ -31,7 +37,7 @@ main {
 }
 
 main>div {
-    font-size: 9vw;
+    font-size: 12vw;
 }
 
 h1 {
@@ -57,7 +63,7 @@ a:hover {
 main img, footer img {
     height: 70%;
     border-radius: 50%;
-    box-shadow: 2px 2px 20px black;
+    /* box-shadow: 2px 2px 20px black; */
 }
 
 div#coluna {
