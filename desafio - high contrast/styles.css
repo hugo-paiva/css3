@@ -1,11 +1,6 @@
-@media (max-width: 600px)
-{
-  .facet_sidebar
-   {
-    display: none;
-   }
-}html {
+html {
     font-size: 1.2vw;
+    scroll-behavior: smooth;
 }
 
 body {
