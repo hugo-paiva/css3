@@ -1,0 +1,123 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 , h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+
+}
+
+section {
+    /* padding-inline: 50% auto; */
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-block: 6rem;
+}
+
+#first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first p {
+    writing-mode: vertical-lr;
+}
+
+#first img {
+    padding: 1rem;
+}
+
+#second {
+    background-color: #FFC924;
+    height: 1100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#third {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+#left {
+    width: 50%;
+    height: 750px;
+    background-image: url(images/background1.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#left div {
+    background-color: #FFC924;
+    width: 400px;
+    height: 400px;
+    padding: 2rem;
+}
+
+#right {
+    width: 50%;
+    height: 750px;
+    background-image: url(images/background2.webp);
+    background-attachment: fixed;
+    background-size: contain;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#right div {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    padding: 2rem;
+}
+
+#right p, #left p {
+    font-size: 3rem;
+}
+
+#fourth {
+    display: flex;
+    height: 700px;
+}
+
+#fourth .container img {
+    width: 12rem;
+}
+
+footer {
+    background-color: #F2F2F2;
+    height: 23rem;
+    display: flex;
+    justify-content:stretch;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex-grow: 1;
+}
+
+footer img {
+    width: 1.5rem;
+}
