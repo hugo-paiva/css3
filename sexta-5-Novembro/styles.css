@@ -34,7 +34,7 @@ h2 {
 
 #second {
     background-color: #FFC924;
-    height: 1100px;
+    height: fit-content;
 }
 
 .container {
@@ -94,7 +94,7 @@ h2 {
 }
 
 #fourth {
-    height: 900px;
+    height: fit-content;
     text-align: center;
 }
 
@@ -187,4 +187,9 @@ li {
 }
 #bttn-right img {
     width: 2rem;
+}
+
+a,
+a:link {
+    color: black;
 }
