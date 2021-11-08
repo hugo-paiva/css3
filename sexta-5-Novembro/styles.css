@@ -13,10 +13,6 @@ h1 , h2 {
 
 }
 
-section {
-    /* padding-inline: 50% auto; */
-}
-
 h2 {
     font-size: 1.5rem;
     padding-block: 6rem;
@@ -98,15 +94,63 @@ h2 {
 }
 
 #fourth {
-    display: flex;
-    height: 700px;
+    height: 900px;
+    text-align: center;
+}
+
+#fourth .container {
+    width: 70%;
+    justify-content: center;
+    /* background-color: black; */
 }
 
 #fourth .container img {
-    width: 12rem;
+    width: 13rem;
+    margin: 0.8rem;
+}
+
+#vermais-btn {
+    box-sizing: border-box;
+    width: 8rem;
+    height: 2.5rem;
+    margin-block: 2.5rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#vermais-btn:hover {
+    background-color: black;
+    color: grey;
+}
+
+#email {
+    box-sizing: border-box;
+    width: 30rem;
+    height: 1.8rem;
+    margin-block: 0.5rem;
+}
+
+#email:hover {
+    border: 3px solid black;
+    border: 0.2rem solid black;
+}
+
+#participar-btn {
+    box-sizing: border-box;
+    width: 30rem;
+    height: 1.8rem;
+    margin-block: 0.5rem;
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+#participar-btn:hover {
+    background-color: #FFC924;
 }
 
 footer {
+    padding-inline: 10%;
     background-color: #F2F2F2;
     height: 23rem;
     display: flex;
@@ -116,8 +160,31 @@ footer {
 
 footer div {
     flex-grow: 1;
+    padding: 1rem;
 }
 
 footer img {
     width: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+#bttn-left {
+    position: fixed;
+    top: 3rem;
+    left: 2rem;
+}
+#bttn-left img {
+    width: 1.2rem;
+}
+
+#bttn-right {
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+}
+#bttn-right img {
+    width: 2rem;
 }
