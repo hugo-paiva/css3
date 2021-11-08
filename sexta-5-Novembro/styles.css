@@ -15,7 +15,15 @@ h1 , h2 {
 
 h2 {
     font-size: 1.5rem;
-    padding-block: 6rem;
+    padding-block: 3.5rem;
+}
+
+#zero {
+    background-color: #FFCCE0;
+    height: fit-content;
+    padding: 0.1rem;
+    padding: 1px;
+    text-align: center;
 }
 
 #first {
@@ -49,11 +57,12 @@ h2 {
     display: flex;
     justify-content: stretch;
     align-items: center;
+    
 }
 
 #left {
     width: 50%;
-    height: 750px;
+    height: 800px;
     background-image: url(images/background1.webp);
     background-attachment: fixed;
     background-size: cover;
@@ -72,10 +81,10 @@ h2 {
 
 #right {
     width: 50%;
-    height: 750px;
+    height: 800px;
     background-image: url(images/background2.webp);
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     
     display: flex;
     justify-content: left;
@@ -116,17 +125,18 @@ h2 {
     margin-block: 2.5rem;
     background-color: white;
     border: 1px solid black;
+    transition: all 0.2s ease;;
 }
 
 #vermais-btn:hover {
     background-color: black;
-    color: grey;
+    color: rgb(184, 184, 184);
 }
 
 #email {
     box-sizing: border-box;
     width: 30rem;
-    height: 1.8rem;
+    height: 2rem;
     margin-block: 0.5rem;
 }
 
@@ -138,11 +148,12 @@ h2 {
 #participar-btn {
     box-sizing: border-box;
     width: 30rem;
-    height: 1.8rem;
+    height: 2rem;
     margin-block: 0.5rem;
     background-color: black;
     color: white;
     border: 0px;
+    transition: all 0.4s ease;;
 }
 
 #participar-btn:hover {
@@ -173,7 +184,7 @@ li {
 
 #bttn-left {
     position: fixed;
-    top: 3rem;
+    top: 5rem;
     left: 2rem;
 }
 #bttn-left img {
@@ -182,7 +193,7 @@ li {
 
 #bttn-right {
     position: fixed;
-    top: 3rem;
+    top: 5rem;
     right: 2rem;
 }
 #bttn-right img {
