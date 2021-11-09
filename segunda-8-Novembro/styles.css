@@ -2,6 +2,7 @@
 
 body {
     line-height: 0.9rem;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 header li {
@@ -12,6 +13,7 @@ header li {
 header {
     position: fixed;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 h1, h2 ,h3 {
@@ -27,13 +29,22 @@ header {
 h1 {
     font-size: 15rem;
     line-height: 0.1rem;
-    margin-block: 0.1em;
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    line-height: 1.6rem;
 }
 
 section {
-    height: 500px;
+    height: 600px;
     display: flex;
-    margin-inline: 15%;
+    padding-inline: 15%;
 }
 
 #primeira-sec {
@@ -45,10 +56,17 @@ section {
 
 #terceira-sec {
     flex-direction: column;
+    align-items: center;
 }
 
 #terceira-sec>div {
     display: flex;
+    flex:1 1 auto;
+    justify-content: space-evenly;
+}
+
+#terceira-sec>div>div {
+    text-align: center;
 }
 
 #terceira-sec img {
@@ -60,6 +78,10 @@ section {
     height: fit-content;
 }
 
+#quarta-sec img {
+    padding: 0.3rem;
+}
+
 #contato {
     flex-direction: column;
     flex: 1 1 auto;
@@ -68,10 +90,25 @@ section {
 
 #contato>div {
     display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
 }
 
 #contato input {
     display: block;
+    box-sizing: border-box;
+    height: 2rem;
+    margin: 0.5rem;
+    border: 0;
+    width: 20rem;
+}
+
+#contato input:last-of-type {
+    height: 8rem;
+}
+
+#contato input:hover {
+    border: 0.1rem solid black;
 }
 
 #quarta-sec img {
@@ -88,14 +125,15 @@ section {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(70, 62, 62);
+    /* background-color: white; */
     color: white;
 }
 
 footer img {
-    width: 1rem;
+    width: 2rem;
 }
 
 footer img path {
-    fill: #fff;
+    fill: rgb(129, 119, 119);
 }
