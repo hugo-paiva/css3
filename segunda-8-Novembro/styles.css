@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    line-height: 0.9rem;
+}
+
+header li {
+    display:inline-block;
+    padding-inline: 1em;
+}
+
+header {
+    position: fixed;
+    margin-bottom: 1rem;
+}
+
+h1, h2 ,h3 {
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 15rem;
+    line-height: 0.1rem;
+    margin-block: 0.1em;
+}
+
+section {
+    height: 500px;
+    display: flex;
+    margin-inline: 15%;
+}
+
+#primeira-sec {
+    background-color: #F4ECE1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#terceira-sec {
+    flex-direction: column;
+}
+
+#terceira-sec>div {
+    display: flex;
+}
+
+#terceira-sec img {
+    width: 35rem;
+}
+
+#quarta-sec {
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+#contato {
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: stretch;
+}
+
+#contato>div {
+    display: flex;
+}
+
+#contato input {
+    display: block;
+}
+
+#quarta-sec img {
+    width: 25rem;
+}
+
+.button {
+    background-color: #FF7648;
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    color: white;
+    border-radius: 3rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer img {
+    width: 1rem;
+}
+
+footer img path {
+    fill: #fff;
+}
