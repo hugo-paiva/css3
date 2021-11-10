@@ -1,0 +1,137 @@
+@import url(//db.onlinewebfonts.com/c/bb2e1211dfd31103079dbce7c49e1d4e?family=DINNeuzeitGroteskLTW01-BdCn);
+
+@font-face {
+    font-family: 'Belinda';
+    src: url(fonts/belinda_script/Belinda\ Script.ttf) format('truetype');
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'DINNeuzeitGroteskLTW01-BdCn';
+    color: #242323;
+    font-size: 16px;
+}
+
+section div#endereco {
+    background-color: #242323;
+    color: white;
+    text-align: center;
+    padding: .3rem;
+}
+
+section div:last-of-type{
+    margin-top: 10rem;
+}
+
+nav {
+    position: fixed;
+    top: 5rem;
+    left: 4rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+h1 {
+    margin-top: -10rem;
+    text-align: center;
+    font-family: 'Belinda';
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+#boasvindas {
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+section {
+    /* padding-inline: 12rem; */
+    background-color: #F9DB79;
+    background-image: url(images/sorveteinicial.webp);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 70%;
+    height: 800px;
+    background-attachment: fixed;
+}
+
+.bigbox {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.smallbox {
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    height: 50vw;
+    background-color: white;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    padding-inline: 12rem;
+    color: white;
+    
+    display:flex;
+    
+}
+
+footer div {
+    padding: 1rem;
+}
+
+#novidades input {
+    box-sizing: border-box;
+    width: 15rem;
+    height: 3rem;
+    border: 0.15rem solid white;
+    background-color: rgba(46, 42, 42, 0);
+    color: white;
+
+}
+
+#novidades input:hover {
+    border-width: 0.3rem;
+}
+
+a,
+a:link,
+a:visited
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #242323;
+    font-size: 1.4rem;
+    padding-inline-end: 1.2rem;
+}
+
+#many-options {
+    background-image: url(images/many-options.webp);
+    height: 900px;
+    margin-top: -770px;
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+article {
+    width: 60%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Belinda';
+}
