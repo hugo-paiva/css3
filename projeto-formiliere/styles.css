@@ -32,9 +32,10 @@ div#daFormiga {
     display: flex;
     justify-content: flex-start;
 }
+
 #switch {
     width: 3rem;
-    padding: 2rem;
+    padding: 0.2rem;
 }
 
 main {
