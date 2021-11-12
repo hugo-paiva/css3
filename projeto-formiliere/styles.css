@@ -39,8 +39,9 @@ div#daFormiga {
 
 main {
     width: 80%;
-    height: 800px;
+    height: 60vw;
     background-image: url(img/mural.png);
+    background-repeat: no-repeat;
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
