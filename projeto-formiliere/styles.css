@@ -1,24 +1,23 @@
+@font-face {
+    font-family: 'Halloween Dreams Script';
+    src: url(fonts/Halloween\ Dreams\ Script.ttf);
+}
 body {
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-}
-
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 102vh;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
+aside {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 #menu {
-    width: 6rem;
-    padding: 2rem;
+    width: 4rem;
+    padding: 1rem;
 }
 
 #balao-formiga {
@@ -29,8 +28,18 @@ aside {
 }
 
 div#daFormiga {
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: flex-start;
+}
+
+#formiga-mimi {
+    width: 10rem;
+}
+
+#switch-area {
+    z-index: 5;
 }
 
 #switch {
@@ -39,18 +48,72 @@ div#daFormiga {
 }
 
 main {
-    width: 80%;
-    height: 60vw;
+    width: 85%;
+    height: 40rem;
     background-image: url(img/mural.png);
     background-repeat: no-repeat;
     border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 4rem;
+    padding-inline: 6rem;
 }
 
 .postit {
     width: 14rem;
+}
+
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40rem;
+    align-items: center;
+}
+
+ul li a{
+    display:block;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 12rem;
+    height: 12rem;
+    background-color: #9F61F0;
+    box-shadow: 5px 5px 7px #2f1e46;
+    font-family: 'Halloween Dreams Script';
+    color: black;
+    text-align: center;
+    transition: transform 0.2s linear;
+}
+
+ul li:nth-child(2n) a {
+    transform: rotate(6deg);
+    background-color: #FDCE04;
+    position: relative;
+    top:-5px;
+}
+
+ul li:nth-child(3n) a {
+    transform: rotate(-3deg);
+    background-color: #F2589A;
+    height: 6rem;
+    position: relative;
+    top:5px
+}
+
+ul li {
+    margin: 1rem
+}
+
+ul li a:hover, ul li a:focus {
+    box-shadow: 10px 10px 7px #000000a6;
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
 }
