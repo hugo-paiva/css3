@@ -21,10 +21,11 @@ aside {
 }
 
 #balao-formiga {
-    width: 13rem;
+    width: 0rem;
     margin-left: -5rem;
     margin-top: -20rem;
     z-index: 1;
+    transition: all 0.4s ease;
 }
 
 div#daFormiga {
@@ -36,6 +37,10 @@ div#daFormiga {
 
 #formiga-mimi {
     width: 10rem;
+}
+
+#formiga-mimi:hover + #balao-formiga, #balao-formiga:hover {
+    width: 13rem;
 }
 
 #switch-area {
@@ -61,6 +66,14 @@ main {
     width: 14rem;
 }
 
+h1 {
+    margin: 0;
+    padding:0
+}
+
+img.post-it {
+    width: 4rem;
+}
 
 ul, li {
     list-style: none;
