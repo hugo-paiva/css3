@@ -3,6 +3,7 @@
     src: url(fonts/Halloween\ Dreams\ Script.ttf);
 }
 body {
+    margin: auto;
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
@@ -21,26 +22,27 @@ aside {
 }
 
 #balao-formiga {
-    width: 0rem;
-    margin-left: -5rem;
-    margin-top: -20rem;
+    width:0rem;
+    margin-left: 0rem;
+    margin-top: -10rem;
     z-index: 1;
     transition: all 0.4s ease;
 }
 
 div#daFormiga {
     position: fixed;
+    left: 0;
     bottom: 0;
     display: flex;
     justify-content: flex-start;
 }
 
 #formiga-mimi {
-    width: 10rem;
+    width: 8rem;
 }
 
 #formiga-mimi:hover + #balao-formiga, #balao-formiga:hover {
-    width: 13rem;
+    width: 10rem;
 }
 
 #switch-area {
@@ -53,8 +55,10 @@ div#daFormiga {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
     width: 85%;
-    height: 40rem;
+    height: 39rem;
     background-image: url(img/mural.png);
     background-repeat: no-repeat;
     border-radius: 3rem;
@@ -62,11 +66,11 @@ main {
     padding-inline: 6rem;
 }
 
-.postit {
-    width: 14rem;
+.post-it {
+    width: 15rem;
 }
 
-h1 {
+h2 {
     margin: 0;
     padding:0
 }
@@ -84,9 +88,8 @@ ul, li {
 ul {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    height: 40rem;
+    height: 37rem;
     align-items: center;
 }
 
@@ -97,7 +100,6 @@ ul li a{
     padding: 1rem;
     width: 12rem;
     height: 12rem;
-    background-color: #9F61F0;
     box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     font-family: 'Halloween Dreams Script';
     color: black;
@@ -106,18 +108,16 @@ ul li a{
 }
 
 ul li:nth-child(2n) a {
-    transform: rotate(6deg);
-    background-color: #FDCE04;
-    position: relative;
+    transform: rotate(6deg)
+    position:relative;
     top:-5px;
 }
 
 ul li:nth-child(3n) a {
     transform: rotate(-3deg);
-    background-color: #F2589A;
     height: 6rem;
     position: relative;
-    top:5px
+    top: 5px
 }
 
 ul li {
@@ -129,4 +129,50 @@ ul li a:hover, ul li a:focus {
     transform: scale(1.25);
     position: relative;
     z-index: 5;
+}
+#servicos li a{
+    background-color: #FDCE04;
+}
+#informes li a{
+    background-color: #F2589A;
+}
+
+#vendas li a{
+    background-color: #9F61F0;
+}
+#menu-lat{
+    visibility:hidden;
+    position: fixed;
+    width: 20%;
+    height: 39rem;
+    background-color: #2C2D40;
+    z-index: 997;
+    transition: all 5s ease;
+}
+.menu-opcao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #9F61F0;
+    width: 75%;
+    margin-top: 1rem;
+    text-align: left;
+    
+}
+.menu-icons{
+    width: 2rem;
+    height:2rem;
+}
+#user-img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: grey solid 1px;
+}
+.botao-menu{
+    border: none;
+}
+.botao-menu:hover + #menu-lat{
+    visibility: visible;
+    
 }
