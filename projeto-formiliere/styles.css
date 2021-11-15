@@ -172,28 +172,21 @@ ul li a:hover, ul li a:focus {
     z-index: 5;
 }
 
-.side-menu {
+.side-menu  {
     position: fixed;
     box-sizing: border-box;
     padding-top: 3rem;
-    top: 0;
-    left: 0;
-    width: 0;
     background-color: #2C2D40;
     height: 100vh;
-    transition: all 0.4s ease-in;
-}
+    width: 360px;
 
-.side-menu * {
-    visibility: collapse;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s ease-in;
 }
 
 #side-menu-checkbox:checked + .side-menu {
-    width: 30%;
-}
-
-#side-menu-checkbox:checked + .side-menu * {
-    visibility: visible;
+    transform: none;
 }
 
 #side-menu-checkbox:checked + .side-menu + .menu-icon {
