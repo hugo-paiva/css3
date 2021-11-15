@@ -98,7 +98,7 @@ ul li a{
     width: 12rem;
     height: 12rem;
     background-color: #9F61F0;
-    box-shadow: 5px 5px 7px #2f1e46;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     font-family: 'Halloween Dreams Script';
     color: black;
     text-align: center;
@@ -125,7 +125,7 @@ ul li {
 }
 
 ul li a:hover, ul li a:focus {
-    box-shadow: 10px 10px 7px #000000a6;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
     transform: scale(1.25);
     position: relative;
     z-index: 5;
