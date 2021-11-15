@@ -140,14 +140,13 @@ ul li a:hover, ul li a:focus {
 #vendas li a{
     background-color: #9F61F0;
 }
-#menu-lat{
-    visibility:hidden;
+#menuL{
+    visibility: hidden;
     position: fixed;
     width: 20%;
     height: 39rem;
     background-color: #2C2D40;
     z-index: 997;
-    transition: all 5s ease;
 }
 .menu-opcao{
     display: flex;
@@ -169,10 +168,14 @@ ul li a:hover, ul li a:focus {
     border-radius: 50%;
     border: grey solid 1px;
 }
-.botao-menu{
+#botao-menu{
     border: none;
+    position: fixed;
+    z-index: 998;
+    left:-1rem;
+    top: 0.5rem;
+    opacity: 100;
 }
-.botao-menu:hover + #menu-lat{
-    visibility: visible;
-    
+#botao-menu:checked #menuL{
+visibility: visible;
 }
