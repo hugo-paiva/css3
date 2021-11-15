@@ -16,7 +16,7 @@ aside {
     justify-content: flex-start;
 }
 
-#menu {
+.menu-icon {
     width: 4rem;
     padding: 1rem;
 }
@@ -108,16 +108,16 @@ ul li a{
 }
 
 ul li:nth-child(2n) a {
-    transform: rotate(6deg)
-    position:relative;
-    top:-5px;
+    transform: rotate(6deg);
+    position: relative;
+    top: -5px;
 }
 
 ul li:nth-child(3n) a {
     transform: rotate(-3deg);
     height: 6rem;
     position: relative;
-    top: 5px
+    top: 5px;
 }
 
 ul li {
@@ -140,14 +140,7 @@ ul li a:hover, ul li a:focus {
 #vendas li a{
     background-color: #9F61F0;
 }
-#menuL{
-    visibility: hidden;
-    position: fixed;
-    width: 20%;
-    height: 39rem;
-    background-color: #2C2D40;
-    z-index: 997;
-}
+
 .menu-opcao{
     display: flex;
     justify-content: space-evenly;
@@ -168,14 +161,41 @@ ul li a:hover, ul li a:focus {
     border-radius: 50%;
     border: grey solid 1px;
 }
-#botao-menu{
-    border: none;
+
+#side-menu-checkbox {
     position: fixed;
-    z-index: 998;
-    left:-1rem;
-    top: 0.5rem;
-    opacity: 100;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    opacity: 0;
+    z-index: 5;
 }
-#botao-menu:checked #menuL{
-visibility: visible;
+
+.side-menu {
+    position: fixed;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: #2C2D40;
+    height: 100vh;
+    transition: all 0.4s ease-in;
+}
+
+.side-menu * {
+    visibility: collapse;
+}
+
+#side-menu-checkbox:checked + .side-menu {
+    width: 30%;
+}
+
+#side-menu-checkbox:checked + .side-menu * {
+    visibility: visible;
+}
+
+#side-menu-checkbox:checked + .side-menu + .menu-icon {
+    filter: invert(1);
 }
