@@ -149,11 +149,14 @@ ul li a:hover, ul li a:focus {
     width: 75%;
     margin-top: 1rem;
     text-align: left;
-    
 }
 .menu-icons{
     width: 2rem;
     height:2rem;
+}
+h4{
+    width: 8rem;
+
 }
 #user-img{
     width: 2.5rem;
@@ -174,6 +177,10 @@ ul li a:hover, ul li a:focus {
 }
 
 .side-menu  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: fixed;
     box-sizing: border-box;
     padding-top: 3rem;

@@ -1,3 +1,13 @@
 #menu {
     filter: invert(1);
 }
+.side-menu{
+    background-color: #f2f2f2;
+    color: black;
+}
+h3, h4{
+    color: black;
+}
+#menu-icon{
+    fill: blueviolet;
+}
