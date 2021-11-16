@@ -1,5 +1,9 @@
+body {
+    background-color: #2C2D40;
+}
+
 #menu {
-    filter: invert(1);
+    filter: invert();
 }
 .side-menu{
     background-color: #f2f2f2;
