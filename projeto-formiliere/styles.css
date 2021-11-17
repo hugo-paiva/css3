@@ -65,7 +65,7 @@ main {
     width: 85%;
     height: 39rem;
     background-color: #E9EBF8;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgb(31, 30, 30);
     border-radius: 1rem;
     box-sizing: border-box;
     padding-inline: 6rem;

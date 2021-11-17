@@ -36,10 +36,10 @@ main {
     margin: auto;
     height: 40rem;
     background-color: #E9EBF8;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     padding: 1rem;
     box-sizing: border-box;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgb(33, 33, 33);
 }
 
 header {
@@ -51,6 +51,8 @@ header {
 
 h1, h2 {
     color: var(--cor-fonte-loja);
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -82,14 +84,18 @@ div.product {
     height: 11rem;
     margin: 1rem;
     background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 2px 5px 5px #0BBAC7;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.7);
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 1px solid #0BBAC7;
     padding: 0.5rem;
-    align-items: stretch;
+}
+
+.product-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 img.product {

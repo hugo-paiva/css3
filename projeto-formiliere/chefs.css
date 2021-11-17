@@ -2,6 +2,11 @@ body {
     background-color: #2C2D40;
 }
 
+#side-menu-checkbox:checked + .side-menu + .menu-icon {
+    /* Isto impede que o styles.css padrão inverta as cores desse menu sem necessidade */
+    filter: invert(0);
+}
+
 #menu {
     filter: invert();
 }
