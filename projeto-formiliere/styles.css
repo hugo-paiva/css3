@@ -1,3 +1,10 @@
+/* 
+    Recomenda-se escrever todo o CSS em um único padrão.
+    Definir se haverá ou não, uma unica linha em branco entre a estilização de cada elemento.
+    
+    Também é recomendado estilizar os elementos pela ordem de hierarquia que possuem no HTML
+*/
+
 @font-face {
     font-family: 'Halloween Dreams Script';
     src: url(fonts/Halloween\ Dreams\ Script.ttf);

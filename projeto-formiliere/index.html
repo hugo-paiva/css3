@@ -1,3 +1,22 @@
+<!-- Resumo => 
+        Positivos
+        1º Consistência e padrão de design
+        2º Poucas linhas de CSS
+        
+        Negativos
+        1º Codificação em dupla linguagem
+        2º Valores de atributos pouco descritivos
+        3º Presença de muitas linhas em branco
+        4º Presença da tag <br />
+        
+        Extra
+        1º É recomendado que as pastas de ícones(icons), fontes(fonts) e imagens(images) sejam subpastas da pasta assets.
+        2º É recomendado criar ao menos duas folhas de estilos para separar estilos gerais de estilos mais específicos.
+          set-style.css => para estilos padrões como as variáveis de estilos, estilos para body, button, input, etc. Tudo que for genérico
+          style.css => para estilos de elementos mais específicos definidos por id ou class
+
+        Vocês encontrarão mais feedback ao longo dos arquivos 
+     -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,7 +30,7 @@
 
 <body>
     <aside>
-        
+        <!--Para uma boa leitura de identação, não é recomendado linhas em branco no HTML-->
         <div id="switch-area">
 
 
@@ -20,8 +39,13 @@
             <!-- Conteúdos do menu lateral -->
             <div class="side-menu">
 
-                <div class="menu-opcao">
-                    <img id="user-img" src="https://avatars.githubusercontent.com/u/85463337?v=4" alt="">
+                <div class="menu-opcao"><!---->
+                    <img id="user-img" src="https://avatars.githubusercontent.com/u/85463337?v=4" alt=""> 
+                    <!--O modo correto de fechamento de tag que fecha em si mesmo é /> no final
+                    <img id="user-img" src="https://avatars.githubusercontent.com/u/85463337?v=4" alt="" />
+                    
+                    Também é necessário informar uma descrição para a imagem no atributo alt
+                    <img id="user-img" src="https://avatars.githubusercontent.com/u/85463337?v=4" alt="User profile photo" />-->
                     <h3>Olá Talita Compradora</h3>
                 </div>
                 <div class="menu-opcao">
@@ -61,7 +85,7 @@
         </div>
 
         <!-- Ajuda com a formiga mimi -->
-        <div id="daFormiga">
+        <div id="daFormiga"><!--Valores de atributos devem ser descritivos e preferencialmente em kebab-case-->
 
             <img src="svg-icons/formiga.svg" alt="formiga" id="formiga-mimi">
             <img src="svg-icons/balao formiga-eu-sou-mimi-posso-ajudar.svg" alt="" id="balao-formiga">
@@ -78,7 +102,7 @@
             <li>
                 <a href="pedrao-store/pedrao-store.html">
                     <h2>Salgados do Pedrão</h2>
-                    <br>
+                    <br><!--Elemento desnecessário-->
                     <img src="pedrao-store/img/feira-comercial.png" alt="" class="post-it">
                     
                 </a>
@@ -86,10 +110,10 @@
             <li>
                 <a href="#">
                     <h2>Doces da Vani</h2>
-                    <br>
+                    <br><br><!--Elemento desnecessário-->
                     <img src="img/vani 2.png" alt="" class="post-it">
                     
-                    <p></p>
+                    <p></p><br><!--Elemento desnecessário-->
                 </a>
             </li>
             <li>
@@ -98,7 +122,7 @@
 
                     <img src="" alt="" class="post-it">
                     
-                    <p></p>
+                    <p></p><br><!--Elemento desnecessário-->
                 </a>
             </li>
         </ul>
@@ -109,9 +133,9 @@
                         condomínio <br> <br>
                         27/11/2021</h2>
 
-                    <img src="" alt="" class="post-it">
+                    <img src="" alt="" class="post-it"><br><!--A tag img é para uso exclusivo de imagens. Neste caso, poderiam usar uma <div>-->
                     
-                    <p></p>
+                    <p></p><br><!--Elemento desnecessário-->
                 </a>
             </li>
             <li>
@@ -139,7 +163,7 @@
             <li>
                 <a href="">
                     <h2>
-                    Pintor <br> Julio <br><br>
+                    Pintor <br> Julio <br><br> 
                     21- 98888-8888
                 </h2>
 
